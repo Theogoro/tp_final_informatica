@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+.main{
+    align-items: center;
+    top: 25%;
+    text-align: center;
+    vertical-align: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 15% 10%;
+    background: rgb(103,169,171);
+background: linear-gradient(135deg, rgba(103,169,171,1) 0%, rgba(55,230,149,1) 100%);
+}
+
+.mainRight{
+    float: right;
+    display: inline;
+}
+.mainRight img{
+    width: 25%;
+    height: 25%;
+}
+.mainLeft{
+    float: left;
+    display: inline;
+}
+.mainLeft p{
+    display: inline-flex;
+    text-align:center;
+    font-family: 'Roboto';
+    font-size: 200%;
+    
+}
+.mainLeft h2{
+    font-family:'Ubuntu Mono';
+    font-size: 500%;
+}
+.mainLeft hr{
+    border-color:#000000;
+}
+.ourCourses{
+    font-family: 'Roboto';
+    font-size: 200%;
+    text-align: center;
+    background-color: white;
+}
+footer{
+    font-family: 'Roboto';
+    font-size: 150%;
+    text-align: center;
+    background-color: white;
+}
+.courses{
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    display: flex;
+    height: 200px;
+    padding-bottom: 10px;
+    /* margin-top: 10px; */
+}
+.courses div img{
+    padding-left: 10px;
+    height: 200px;
+    width: 350px;
+    border-radius: 20px;
+}
+.space{
+    height: 10px;
+    border: none;
+}
