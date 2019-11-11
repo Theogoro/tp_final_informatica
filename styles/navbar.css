@@ -38,6 +38,8 @@ header, .findbar{
     display: inline;
 }
 .headerL nav ul li{
+    background-color: red;
+    border-radius: 15px;
     display: inline;
    padding-right: 5px;
 }
@@ -66,7 +68,7 @@ input{
     background-position: 5px calc(100% - 5px);
     background-size: calc(100% - 10px) 2px;
     background-repeat: no-repeat;
-    background-color: #fcfcfc;
+    background-color: #FFFFFF;
     border: 1px solid;
     padding: 10px;
 }
