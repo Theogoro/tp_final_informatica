@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/navbar.css">
-    <title>{{title}}</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>CroKode - Inicio</title>
 </head>
-
+<!-- Clonar esta cabecera en todos los archivos -->
 <body>
     <header id="navbar">
         <div class="headerL">
@@ -30,8 +31,23 @@
             onclick="find(document.getElementById('findBarInput').value)">
         <script>
             function find(findTerm) {
+                var location = "";
                 if (findTerm != "") {
-                    window.location = 'http://127.0.0.1:5500/' + 'find?find=' + findTerm;
+                    var f = String(findTerm);
+                    console.log(f);
+                    switch (f.toLowerCase()) {
+                        case 'python':
+                            location = 'findPython.html';
+                            break;
+                        case 'javascript':
+                            location = 'findJavaScript.html';
+                            break;
+                    }
+                    if (location != ""){
+                        window.location = location;
+                    }else{
+                        window.location = 'notFound.html';
+                    }
                     // window.location = {{location}} + 'find?find='+findTerm ; <-- Para cuando se module la pagina
                 }
             }
