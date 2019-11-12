@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/navbar.css">
@@ -48,7 +48,6 @@
                     }else{
                         window.location = 'notFound.html';
                     }
-                    // window.location = {{location}} + 'find?find='+findTerm ; <-- Para cuando se module la pagina
                 }
             }
         </script>
@@ -90,11 +89,32 @@
             <div>
                 <img src="images/cursos/example.jpg" alt="">
             </div>
-            <div>
-                <img src="images/cursos/example.jpg" alt="">
-            </div>
         </div>
     </div>
+    <!-- Footer generico -->
+    <div class="notes">
+            <img src="images/find.svg" style="width: 32px; padding: 6px" onclick="showNotes()">
+    </div>
+    <style>
+        .notes{
+            vertical-align: middle;
+            position: fixed;
+            top:88%;
+            left: 94.25%;
+            background:#ffffff;
+            border-radius: 24px;
+            cursor: pointer;
+            /* box-shadow: #000000; */
+        }
+        .notes:hover{
+            background:#ececec;
+        }
+    </style>
+    <script>
+        function showNotes(){
+            console.log('f');
+        }
+    </script>
     <footer>
         <p>Theo Berta y Santiago Nieva - 2019</p>
     </footer>

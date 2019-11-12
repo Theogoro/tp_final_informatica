@@ -10,7 +10,7 @@ header, .findbar{
 }
 
 .headerL h1{
-    font-family: 'Ubuntu Mono';
+    font-family: 'Ubuntu Mono', monospace;
     display: inline;
     vertical-align:middle;
     border-right-color: #282828;
