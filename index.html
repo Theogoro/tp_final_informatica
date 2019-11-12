@@ -154,16 +154,24 @@
             formNotes.style.width = '25%';
             formNotes.style.height = '55%';
             myStorage.setItem('LA','NILDA');
-            myStorage.setItem('LA','NILDA2');
+            myStorage.setItem('LA2','NILDA2');
             loadNotes();
         }
         function closeNotes() {
             formNotes.style.top = '110%';
         }
         function loadNotes() {
-            for(var Key in myStorage){
-                // bodyNotes.appendChild(Key);
-                console.log(Key)
+            // for(var Key in myStorage){
+            //     // bodyNotes.appendChild(Key);
+            //     console.log(Key)
+            // }
+            var keys = [];
+            for (let index = 0; index < myStorage.length; index++) {
+                // console.log();
+                keys.push(myStorage.key(index))
+            }
+            for(var key in keys){
+                console.log(myStorage.getItem(key));
             }
         }
     </script>
