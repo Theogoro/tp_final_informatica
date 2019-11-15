@@ -1,0 +1,33 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: rgb(103,169,171);
+    background: linear-gradient(135deg, rgba(103,169,171,1) 0%, rgba(55,230,149,1) 100%);
+}
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 30%;
+    /* background-color: #ffffff54; */
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    align-content: space-between;
+
+}
+.SocialMedias li a img{
+    vertical-align: middle;
+    width: 9em;
+}
+.SocialMedias li a{
+    text-decoration: none;
+}
+.SocialMedias li{
+    display: inline;
+}
