@@ -15,7 +15,6 @@
 }
 
 .mainRight{
-    /* float: right; */
     display: inline;
 }
 .mainRight img{
@@ -23,7 +22,6 @@
     height: 29%;
 }
 .mainLeft{
-    /* float: left; */
     display: inline;
 }
 .mainLeft p{
@@ -43,8 +41,18 @@
 .ourCourses, .ourLanguage{
     font-family: 'Roboto';
     font-size: 200%;
+    font-weight: 800;
+    /* text-decoration: underline; */
     text-align: center;
     background-color: white;
+    padding:0.25em;
+    /* margin-bottom: 0.5em; */
+    vertical-align: middle;
+}
+.ourCourses img, .ourLanguage img{
+    vertical-align: middle;
+    width: 1.5em; 
+    display: inline;
 }
 footer{
     font-family: 'Roboto';
@@ -60,21 +68,17 @@ footer{
     display: flex;
     height: 200px;
     padding-bottom: 10px;
-    /* margin-top: 10px; */
 }
 .courses div img{
-    padding-left: 10px;
+    background-color: transparent;
     height: 15em;
-    /* width: 350px; */
     border-radius: 5%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 .space{
     height: 10px;
     border: none;
 }
-/* .displayCourses{ */
-    /* background-image: url('../images/pattern.svg'); */
-/* } */
 .lenguage{
     display: flex;
     justify-content: center;
@@ -83,6 +87,7 @@ footer{
     height: 36em;
 }
 .lenguageCard{
+    /* 150 * 307.54 */
     text-align: center;
     width: 16em;
     background-color: rgba(255, 255, 255, 0.500);
@@ -91,7 +96,7 @@ footer{
     
 }
 .lenguageCard img{
-    width: 100%;
+    width: 16em;
     border-top-right-radius: 2.5%;
     border-top-left-radius: 2.5%;
 
@@ -104,10 +109,24 @@ footer{
     border-radius: 2.5%;
     height: 35em;
     width: 40em;
-    /* ancho de 640px y largo de 560px <-- este es el tamaño del main*/
-    background-image: url('../images/article.png');
+    /* ancho de 650px y largo de 560px <-- este es el tamaño del main*/
+    background-image: url('../images/main.png');
+    background-position: center;
+    background-size: 40em 35em;
     margin-right: 10px;
 }
 .Card{
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.384);
+}
+.SocialMedias li a img{
+    width: 2em;
+}
+.SocialMedias li a{
+    text-decoration: none;
+}
+.SocialMedias li{
+    display: inline;
+}
+.SocialMedias{
+    padding-bottom: 0.5em;
 }

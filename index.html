@@ -68,15 +68,15 @@
         </div>
     </div>
     <div>
-
         <div class="backLanguage">
             <div class="ourLanguage">
-                <p>Tendencias</p>
+                <p style="display: inline-block">Tendencias</p>
+                <img src="images/trending.svg">
             </div>
             <div class="displayLanguage">
                 <div class="lenguage">
                     <div class="mainLenguageCard Card">
-
+                        <!-- <img src="images/main.png" alt=""> -->
                     </div>
                     <div class="columnCard" style="margin-right: 10px;">
                         <div class="lenguageCard Card">
@@ -100,8 +100,10 @@
         </div>
     </div>
     <hr class="space">
+    <hr class="space">
     <div class="ourCourses">
-        <p>Nuevos cursos</p>
+        <p style="display: inline-block">Nuevos cursos</p>
+        <img src="images/news.svg">
     </div>
     <div class="displayCourses">
         <hr class="space">
@@ -110,10 +112,10 @@
                 <img src="images/cursos/example.jpg" alt="">
             </div>
             <div>
-                <img src="images/cursos/example.jpg" alt="">
+                <img src="images/cursos/example.jpg" alt="" style="margin-left: 10px;">
             </div>
             <div>
-                <img src="images/cursos/example.jpg" alt="">
+                <img src="images/cursos/example.jpg" alt="" style="margin-left: 10px;">
             </div>
         </div>
         <div class="courses">
@@ -121,104 +123,51 @@
                 <img src="images/cursos/example.jpg" alt="">
             </div>
             <div>
-                <img src="images/cursos/example.jpg" alt="">
+                <img src="images/cursos/example.jpg" alt="" style="margin-left: 10px;">
             </div>
         </div>
     </div>
     </div>
-    <!-- Footer generico -->
-    <!-- 
-        
-        
-        No me convence este footer
-        
-
-        <div class="buttomNotes" onclick="showNotes()">
-        <img src="images/find.svg" style="width: 32px; padding: 6px">
-    </div>
-    <div class="formNotes" id="formNotes" style="top:110%;left: 74%;">
-        <header class="headerNotes" onclick="closeNotes()">
-            <h1>
-                Mis notas
-            </h1>
-        </header>
-        <div id="bodyNotes">
-
-        </div>
-    </div>
-    <style>
-        .buttomNotes {
-            vertical-align: middle;
-            position: fixed;
-            top: 88%;
-            left: 94.25%;
-            background: #ffffff;
-            border-radius: 24px;
-            cursor: pointer;
-            box-shadow: 1px 1px 7px #000000;
-        }
-
-        .buttomNotes:hover {
-            background: #ececec;
-        }
-
-        .formNotes {
-            position: fixed;
-            background: #ffffff;
-            border-top-right-radius: 15px;
-            border-top-left-radius: 15px;
-            box-shadow: 0 0 15px #000000;
-        }
-
-        .headerNotes {
-            cursor: pointer;
-            border-top-right-radius: 15px;
-            border-top-left-radius: 15px;
-            height: 10%;
-            background: rgb(103, 169, 171);
-            background: linear-gradient(135deg, rgba(103, 169, 171, 1) 0%, rgba(55, 230, 149, 1) 100%);
-            text-align: center;
-            display: block;
-        }
-
-        .headerNotes h1 {
-            padding-top: 1%;
-        }
-    </style>
-    <script>
-        var myStorage = window.localStorage;
-        const formNotes = document.getElementById('formNotes');
-        const bodyNotes = document.getElementById('bodyNotes');
-        function showNotes() {
-            formNotes.style.top = '45%';
-            formNotes.style.width = '25%';
-            formNotes.style.height = '55%';
-            myStorage.setItem('LA','NILDA');
-            myStorage.setItem('LA2','NILDA2');
-            loadNotes();
-        }
-        function closeNotes() {
-            formNotes.style.top = '110%';
-        }
-        function loadNotes() {
-            // for(var Key in myStorage){
-            //     // bodyNotes.appendChild(Key);
-            //     console.log(Key)
-            // }
-            var keys = [];
-            for (let index = 0; index < myStorage.length; index++) {
-                // console.log();
-                keys.push(myStorage.key(index))
-            }
-            for(var key in keys){
-                console.log(myStorage.getItem(key));
-            }
-        }
-    </script> -->
-
     <footer>
-        <!-- <p>Theo Berta y Santiago Nieva - 2019</p> -->
-        <p>
+        <hr style="height: 1em; border:none">
+        <ul class="SocialMedias">
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/github.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/google-plus.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/instagram.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/facebook.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/tumblr.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/twitter.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/pinterest.svg">
+                </a>
+            </li>
+        </ul>
+        <p style="font-size: 75%">
             Copyright (c) 2017 - 2019 Copyright Theo Berta & Santiago Nieva All Rights Reserved.
         </p>
     </footer>

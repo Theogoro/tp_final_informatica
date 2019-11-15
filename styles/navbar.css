@@ -38,8 +38,6 @@ header, .findbar{
     display: inline;
 }
 .headerL nav ul li{
-    /* background-color: rgb(103,169,171);
-    border-radius: 5px; */
     display: inline;
     padding: 5px;
     margin-right: 5px;
