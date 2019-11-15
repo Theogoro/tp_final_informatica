@@ -85,23 +85,29 @@ footer{
 .lenguageCard{
     text-align: center;
     width: 16em;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.500);
     height:17em;
     border-radius: 2.5%;
+    
 }
 .lenguageCard img{
     width: 100%;
-    border-radius-top: 5%;
+    border-top-right-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+
 }
 .lenguageCard:first-child{
     margin-bottom: 1em;
+    
 }
 .mainLenguageCard{
+    border-radius: 2.5%;
     height: 35em;
-    width: 32em;
+    width: 40em;
+    /* ancho de 640px y largo de 560px <-- este es el tamaño del main*/
     background-image: url('../images/article.png');
     margin-right: 10px;
 }
-.backLanguage{
-    
+.Card{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.384);
 }
