@@ -9,21 +9,21 @@
     vertical-align: center;
     justify-content: space-between;
     display: flex;
-    padding: 15% 10%;
+    padding: 14.5% 10%;
     background: rgb(103,169,171);
-background: linear-gradient(135deg, rgba(103,169,171,1) 0%, rgba(55,230,149,1) 100%);
+    background: linear-gradient(135deg, rgba(103,169,171,1) 0%, rgba(55,230,149,1) 100%);
 }
 
 .mainRight{
-    float: right;
+    /* float: right; */
     display: inline;
 }
 .mainRight img{
-    width: 25%;
-    height: 25%;
+    width: 29%;
+    height: 29%;
 }
 .mainLeft{
-    float: left;
+    /* float: left; */
     display: inline;
 }
 .mainLeft p{
@@ -40,7 +40,7 @@ background: linear-gradient(135deg, rgba(103,169,171,1) 0%, rgba(55,230,149,1) 1
 .mainLeft hr{
     border-color:#000000;
 }
-.ourCourses{
+.ourCourses, .ourLanguage{
     font-family: 'Roboto';
     font-size: 200%;
     text-align: center;
@@ -50,7 +50,7 @@ footer{
     font-family: 'Roboto';
     font-size: 150%;
     text-align: center;
-    background-color: white;
+    background-color:  rgb(103,169,171);
 }
 .courses{
     align-items: center;
@@ -64,11 +64,44 @@ footer{
 }
 .courses div img{
     padding-left: 10px;
-    height: 200px;
-    width: 350px;
-    border-radius: 20px;
+    height: 15em;
+    /* width: 350px; */
+    border-radius: 5%;
 }
 .space{
     height: 10px;
     border: none;
+}
+/* .displayCourses{ */
+    /* background-image: url('../images/pattern.svg'); */
+/* } */
+.lenguage{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    height: 36em;
+}
+.lenguageCard{
+    text-align: center;
+    width: 16em;
+    background-color: rgb(255, 255, 255);
+    height:17em;
+    border-radius: 2.5%;
+}
+.lenguageCard img{
+    width: 100%;
+    border-radius-top: 5%;
+}
+.lenguageCard:first-child{
+    margin-bottom: 1em;
+}
+.mainLenguageCard{
+    height: 35em;
+    width: 32em;
+    background-image: url('../images/article.png');
+    margin-right: 10px;
+}
+.backLanguage{
+    
 }
