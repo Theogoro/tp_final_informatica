@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 html, body{
     height: 100%;
     width: 100%;
@@ -6,28 +9,39 @@ html, body{
 body{
     background: rgb(103,169,171);
     background: linear-gradient(135deg, rgba(103,169,171,1) 0%, rgba(55,230,149,1) 100%);
+    vertical-align: middle;
 }
-.content{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    height: 30%;
-    /* background-color: #ffffff54; */
+.SocialMedias{
     text-align: center;
-    vertical-align: middle;
-    align-items: center;
-    align-content: space-between;
-
-}
-.SocialMedias li a img{
-    vertical-align: middle;
-    width: 9em;
-}
-.SocialMedias li a{
-    text-decoration: none;
+    /* justify-content: flex; */
+    /* display: flex; */
+    list-style: none;
 }
 .SocialMedias li{
+    /* flex: 1 1 auto; */
     display: inline;
+}
+img{
+    width: 6em;
+}
+
+
+.content{
+    align-items: center;
+    text-align: center;
+    /* justify-content: space-between; */
+    /* display: flex; */
+    /* height: 90.71618037135785‬%; */
+    height: 48.5%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.content a{
+    vertical-align: middle;
+    text-decoration: none;
+
+}
+.content a img{
+    vertical-align: middle;
+    /* box-shadow: 0 0 1em rgba(0, 0, 0, 0.493); */
 }
