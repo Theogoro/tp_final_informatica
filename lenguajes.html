@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/lenguajes.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>CroKode - Lenguajes</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="headerL">
+            <img src="images/icon.svg" onclick="window.location.href ='index.html'">
+            <h1>CroKode</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="lenguajes.html">Lenguajes</a></li>
+                    <li><a href="courses.html">Cursos</a></li>
+                    <li><a href="contactUs.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <input placeholder="¿Que deseas buscar?" class="findBarInput" id="findBarInput">
+        <img src="images/find.svg" style="width: 30px; height: 30px; align-self: center;cursor: pointer;"
+            onclick="find(document.getElementById('findBarInput').value)">
+        <script>
+            function find(findTerm) {
+                var location = "";
+                if (findTerm != "") {
+                    var f = String(findTerm);
+                    console.log(f);
+                    switch (f.toLowerCase()) {
+                        case 'python':
+                            location = 'findPython.html';
+                            break;
+                        case 'javascript':
+                            location = 'findJavaScript.html';
+                            break;
+                    }
+                    if (location != "") {
+                        window.location = location;
+                    } else {
+                        window.location = 'notFound.html';
+                    }
+                }
+            }
+        </script>
+    </header>
+    <main>
+        <div class="titleCards">
+            <!-- <img src="images/courses.svg" alt=""> -->
+            <img src="images/code.svg" alt="">
+
+            <p>Lenguajes</p>
+        </div>
+        <div class="cardContainer">
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+                <p class="name">Introducción a javascript</p>
+                <p>En ese curso veras las base para comenzar a progrmar en Javascript.</p>
+                <div class="teacher">
+                    <img src="images/user.svg" alt="user">
+                    <p>Nieva Santiago</p>
+                </div>
+            </div>
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+            <div class="card">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+        </div>
+        <div class="cardContainer">
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+        </div>
+        <div class="cardContainer">
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+
+            </div>
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+            <hr style="height: 1em; border:none">
+            <ul class="SocialMedias">
+                <li>
+                    <a target="_blank" href="github.com/theogoro">
+                        <img src="images/socialmedia/github.svg">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="github.com/theogoro">
+                        <img src="images/socialmedia/google-plus.svg">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="github.com/theogoro">
+                        <img src="images/socialmedia/instagram.svg">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="github.com/theogoro">
+                        <img src="images/socialmedia/facebook.svg">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="github.com/theogoro">
+                        <img src="images/socialmedia/tumblr.svg">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="github.com/theogoro">
+                        <img src="images/socialmedia/twitter.svg">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="github.com/theogoro">
+                        <img src="images/socialmedia/pinterest.svg">
+                    </a>
+                </li>
+            </ul>
+            <p style="font-size: 75%; padding-bottom: 5px;">
+                Copyright (c) 2017 - 2019 Copyright Theo Berta & Santiago Nieva All Rights Reserved.
+            </p>
+        </footer>
+</body>
