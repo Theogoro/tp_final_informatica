@@ -20,7 +20,7 @@ body {
 }
 
 .card {
-    margin: 3em 0 0 0;
+    margin: 2em 0 0 0;
     height: 24em;
     width: 18em;
     background-color: #ffffff;
@@ -50,7 +50,9 @@ body {
     vertical-align: middle;
     color: white;
 }
-
+.card img:hover{
+    cursor: pointer;
+}
 .titleCards p {
     display: inline;
 }
@@ -78,7 +80,6 @@ footer {
     text-decoration: underline;
     cursor: pointer;
 }
-
 .teacher {
     margin-top: 15%;
     display: flex;
