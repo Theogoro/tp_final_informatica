@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/news.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>CroKode - Noticias</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="headerL">
+            <img src="images/icon.svg" onclick="window.location.href ='index.html'">
+            <h1>CroKode</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="lenguajes.html">Lenguajes</a></li>
+                    <li><a href="news.html">Noticias</a></li>
+                    <li><a href="contactUs.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <input placeholder="¿Que deseas buscar?" class="findBarInput" id="findBarInput">
+        <img src="images/find.svg" style="width: 30px; height: 30px; align-self: center;cursor: pointer;"
+            onclick="find(document.getElementById('findBarInput').value)">
+        <script>
+            function find(findTerm) {
+                var location = "";
+                if (findTerm != "") {
+                    var f = String(findTerm);
+                    console.log(f);
+                    switch (f.toLowerCase()) {
+                        case 'python':
+                            location = 'findPython.html';
+                            break;
+                        case 'javascript':
+                            location = 'findJavaScript.html';
+                            break;
+                    }
+                    if (location != "") {
+                        window.location = location;
+                    } else {
+                        window.location = 'notFound.html';
+                    }
+                }
+            }
+        </script>
+    </header>
+    <main class="mainContainer">
+        <div class="newsContainer">
+            <div class="newsDupla">
+                <article class="articleLeft">
+                    <div class="left"></div>
+                    <div class="right">
+                        <p class="auxText">
+                            Tags: Programacion, Actualidad
+                        </p>
+                        <h1>Titulo de ejemplo</h1>
+                        <p class="contenido">Ejemplo</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="left"></div>
+                    <div class="right">
+                        <p class="auxText">
+                            Tags: Programacion, Actualidad
+                        </p>
+                        <h1>Titulo de ejemplo</h1>
+                        <p class="contenido">Ejemplo</p>
+                    </div>
+                </article>
+            </div>
+            <div class="newsDupla">
+                <article class="articleLeft">
+                    <div class="left"></div>
+                    <div class="right">
+                        <p class="auxText">
+                            Tags: Programacion, Actualidad
+                        </p>
+                        <h1>Titulo de ejemplo</h1>
+                        <p class="contenido">Ejemplo</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="left"></div>
+                    <div class="right">
+                        <p class="auxText">
+                            Tags: Programacion, Actualidad
+                        </p>
+                        <h1>Titulo de ejemplo</h1>
+                        <p class="contenido">Ejemplo</p>
+                    </div>
+                </article>
+            </div>
+            <div class="newsDupla">
+                <article class="articleLeft">
+                    <div class="left"></div>
+                    <div class="right">
+                        <p class="auxText">
+                            Tags: Programacion, Actualidad
+                        </p>
+                        <h1>Titulo de ejemplo</h1>
+                        <p class="contenido">Ejemplo</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="left"></div>
+                    <div class="right">
+                        <p class="auxText">
+                            Tags: Programacion, Actualidad
+                        </p>
+                        <h1>Titulo de ejemplo</h1>
+                        <p class="contenido">Ejemplo</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>

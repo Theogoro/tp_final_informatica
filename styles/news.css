@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&display=swap');
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: rgb(103, 169, 171);
+    background: linear-gradient(0deg, rgb(103, 169, 171) 0%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 1) 100%) fixed no-repeat 0 0;    
+}
+.newsDupla{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsDupla article{
+   width: 40%; 
+   height: 10em;
+   background-color: white;
+   display: flex;
+   box-shadow: 0 0 1em #0000006c;
+   border-radius: 1em;
+}
+article:hover{
+    cursor: pointer;
+}
+.left{
+    width: 33%;
+    background-image: url('../images/cursos/example.jpg');
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;    
+}
+.right{
+    padding-left: 2%;
+    width: 65%;
+}
+.articleLeft{
+    margin-right: 2%;
+}
+.auxText{
+    /* font-size: 0.8em; */
+    color:rgba(0, 0, 0, 0.5)
+}
+.right h1{
+    vertical-align: middle;
+    font-family: 'Open sans'
+}
