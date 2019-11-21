@@ -12,7 +12,7 @@ body {
     background: rgb(103, 169, 171);
     background: linear-gradient(0deg, rgb(103, 169, 171) 0%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 1) 100%) fixed no-repeat 0 0;
 }
-
+ Separar todo lo relacionado con el modal en un archivo distinto
 .modal {
     display: none;
     position: fixed;
