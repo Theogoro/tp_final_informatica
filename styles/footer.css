@@ -1,0 +1,22 @@
+footer {
+    font-family: 'Roboto';
+    font-size: 150%;
+    text-align: center;
+    background-color: rgb(62, 114, 116);
+}
+
+.SocialMedias li a img {
+    width: 2em;
+}
+
+.SocialMedias li a {
+    text-decoration: none;
+}
+
+.SocialMedias li {
+    display: inline;
+}
+
+.SocialMedias {
+    padding-bottom: 0.5em;
+}

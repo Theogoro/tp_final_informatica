@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-
-.main{
+.main {
     align-items: center;
     top: 25%;
     text-align: center;
@@ -10,57 +8,58 @@
     justify-content: space-between;
     display: flex;
     padding: 14.5% 10%;
-    background: rgb(103,169,171);
-    background: linear-gradient(135deg, rgba(103,169,171,1) 0%, rgba(55,230,149,1) 100%);
+    background: rgb(103, 169, 171);
+    background: linear-gradient(135deg, rgba(103, 169, 171, 1) 0%, rgba(55, 230, 149, 1) 100%);
 }
 
-.mainRight{
+.mainRight {
     display: inline;
 }
-.mainRight img{
+
+.mainRight img {
     width: 29%;
     height: 29%;
 }
-.mainLeft{
+
+.mainLeft {
     display: inline;
 }
-.mainLeft p{
+
+.mainLeft p {
     display: inline-flex;
-    text-align:center;
+    text-align: center;
     font-family: 'Roboto';
     font-size: 200%;
-    
 }
-.mainLeft h2{
-    font-family:'Ubuntu Mono';
+
+.mainLeft h2 {
+    font-family: 'Ubuntu Mono';
     font-size: 500%;
 }
-.mainLeft hr{
-    border-color:#000000;
+
+.mainLeft hr {
+    border-color: #000000;
 }
-.ourCourses, .ourLanguage{
+
+.ourCourses, .ourLanguage {
     font-family: 'Roboto';
     font-size: 200%;
     font-weight: 800;
     /* text-decoration: underline; */
     text-align: center;
     background-color: white;
-    padding:0.25em;
+    padding: 0.25em;
     /* margin-bottom: 0.5em; */
     vertical-align: middle;
 }
-.ourCourses img, .ourLanguage img{
+
+.ourCourses img, .ourLanguage img {
     vertical-align: middle;
-    width: 1.5em; 
+    width: 1.5em;
     display: inline;
 }
-footer{
-    font-family: 'Roboto';
-    font-size: 150%;
-    text-align: center;
-    background-color:  rgb(103,169,171);
-}
-.courses{
+
+.courses {
     align-items: center;
     text-align: center;
     vertical-align: center;
@@ -69,43 +68,47 @@ footer{
     height: 200px;
     padding-bottom: 10px;
 }
-.courses div img{
+
+.courses div img {
     background-color: transparent;
     height: 15em;
     border-radius: 5%;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
-.space{
+
+.space {
     height: 10px;
     border: none;
 }
-.lenguage{
+
+.lenguage {
     display: flex;
     justify-content: center;
     vertical-align: middle;
     align-items: center;
     height: 36em;
 }
-.lenguageCard{
+
+.lenguageCard {
     /* 150 * 307.54 */
     text-align: center;
     width: 16em;
     background-color: rgba(255, 255, 255, 0.500);
-    height:17em;
+    height: 17em;
     border-radius: 2.5%;
-    
 }
-.lenguageCard img{
+
+.lenguageCard img {
     width: 16em;
     border-top-right-radius: 2.5%;
     border-top-left-radius: 2.5%;
+}
 
-}
-.lenguageCard:first-child{
+.lenguageCard:first-child {
     margin-bottom: 1em;
-    
 }
-.mainLenguageCard{
+
+.mainLenguageCard {
     border-radius: 2.5%;
     height: 35em;
     width: 40em;
@@ -115,18 +118,7 @@ footer{
     background-size: 40em 35em;
     margin-right: 10px;
 }
-.Card{
+
+.Card {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.384);
-}
-.SocialMedias li a img{
-    width: 2em;
-}
-.SocialMedias li a{
-    text-decoration: none;
-}
-.SocialMedias li{
-    display: inline;
-}
-.SocialMedias{
-    padding-bottom: 0.5em;
 }

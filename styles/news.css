@@ -47,3 +47,8 @@ article:hover{
     vertical-align: middle;
     font-family: 'Open sans'
 }
+.newsTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

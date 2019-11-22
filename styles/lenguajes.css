@@ -61,13 +61,6 @@ main {
     margin-bottom: 1em;
 }
 
-footer {
-    font-family: 'Roboto';
-    font-size: 150%;
-    text-align: center;
-    background-color: rgb(62, 114, 116);
-}
-
 .name {
     margin-top: 1em;
     font-family: 'Open Sans';
@@ -91,20 +84,4 @@ footer {
     width: 3em;
     height: 3em;
     margin: 0 1em 0 0;
-}
-
-.SocialMedias li a img {
-    width: 2em;
-}
-
-.SocialMedias li a {
-    text-decoration: none;
-}
-
-.SocialMedias li {
-    display: inline;
-}
-
-.SocialMedias {
-    padding-bottom: 0.5em;
 }
