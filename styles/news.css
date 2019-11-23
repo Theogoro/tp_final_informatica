@@ -28,9 +28,15 @@ article:hover{
 }
 .left{
     width: 33%;
-    background-image: url('../images/cursos/example.jpg');
+    /* background-image: url('../images/cursos/example.jpg'); */
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left img{
+    width: 4em;
 }
 .right{
     padding-left: 2%;
@@ -41,7 +47,8 @@ article:hover{
 }
 .auxText{
     /* font-size: 0.8em; */
-    color:rgba(0, 0, 0, 0.5)
+    color:rgba(0, 0, 0, 0.5);
+    padding-top: 1em;
 }
 .right h1{
     vertical-align: middle;
