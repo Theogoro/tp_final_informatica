@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/course.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>CroKode - Articulo</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="headerL">
+            <img src="images/icon.svg" onclick="window.location.href ='index.html'">
+            <h1>CroKode</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="lenguajes.html">Lenguajes</a></li>
+                    <li><a href="news.html">Noticias</a></li>
+                    <li><a href="contactUs.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <input placeholder="¿Que deseas buscar?" class="findBarInput" id="findBarInput">
+        <img src="images/find.svg" style="width: 30px; height: 30px; align-self: center;cursor: pointer;"
+            onclick="find(document.getElementById('findBarInput').value)">
+        <script>
+            function find(findTerm) {
+                var location = "";
+                if (findTerm != "") {
+                    var f = String(findTerm);
+                    console.log(f);
+                    switch (f.toLowerCase()) {
+                        case 'python':
+                            location = 'findPython.html';
+                            break;
+                        case 'javascript':
+                            location = 'findJavaScript.html';
+                            break;
+                    }
+                    if (location != "") {
+                        window.location = location;
+                    } else {
+                        window.location = 'notFound.html';
+                    }
+                }
+            }
+        </script>
+    </header>
+    <main>
+        <article>
+            <div class="bodyArticle">
+                <img src="images/banner/code.jpg">
+                <h1 style="text-align: left;">Lorem ipsum dolor sit amet consectetur</h1>
+                <div class="headArticle">
+                    <div class="author">
+                        <img src="images/user.svg" style="width: 2em;height: 2em;">
+                        <p style="padding-left: 0.5em;">Jorge Luis Borges</p>
+                    </div>
+                    <time>
+                        21/11/2019
+                    </time>
+                </div>
+                <div style="text-align: left;font-weight: 300;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni consequuntur, ea delectus
+                        nesciunt corrupti qui velit consectetur error! Recusandae tenetur nobis laborum sit. Modi aut
+                        sit ipsum dolores at!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto est placeat impedit magni,
+                        ducimus repudiandae ipsum tenetur dicta dolor neque qui accusantium commodi aspernatur odio
+                        corrupti consequatur. Eveniet, sequi veniam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores iusto. Id
+                        tempora similique, inventore, expedita quis sunt blanditiis ipsa eius totam quasi non. Facere
+                        quae nisi iure fugiat in!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur at, illo accusamus
+                        aperiam a nemo repellat. Asperiores, optio. Incidunt vero tenetur earum sunt ipsa ratione
+                        aspernatur id est recusandae sequi.
+                    </p>
+                    <div class="codeContainer">
+                        <code>
+                            <pre>
+<span>1</span>   <span class="comment">//Declaracion de variable</span>
+<span>2</span>
+<span>3</span>   <span class="reservedWords">var</span> <span class="varName">name</span> = <spam class="value">"Theo"</spam>; <span class="comment">//Variable de texto</span>
+<span>4</span> 
+<span>5</span>   <span class="reservedWords">var</span> <span class="varName">num1</span> = <spam class="value">9</spam>; <span class="comment">//Variable numerica</span>
+<span>6</span> 
+<span>7</span>   <span class="reservedWords">var</span> <span class="varName">IsOK</span> = <span class="value">false</span>; <span class="comment">//Variable de verdad</span>
+<span>8</span> 
+<span>9</span>   <span class="reservedWords">var</span> <span class="varName">notDefined</span> = <span class="value">undefined</span>; <span class="comment">//variable sin tipo</span>
+<span>10</span>  
+<span>11</span>  <span class="reservedWords">var</span> <span class="varName">list</span> = [<span class="value">"E"</span>,<span class="value">1</span>,<span class="value">bool</span>]; <span class="comment">//lista de valores</span>
+<span>12</span>  
+</pre>
+                        </code>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni consequuntur, ea delectus
+                        nesciunt corrupti qui velit consectetur error! Recusandae tenetur nobis laborum sit. Modi aut
+                        sit ipsum dolores at!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto est placeat impedit magni,
+                        ducimus repudiandae ipsum tenetur dicta dolor neque qui accusantium commodi aspernatur odio
+                        corrupti consequatur. Eveniet, sequi veniam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores iusto. Id
+                        tempora similique, inventore, expedita quis sunt blanditiis ipsa eius totam quasi non. Facere
+                        quae nisi iure fugiat in!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur at, illo accusamus
+                        aperiam a nemo repellat. Asperiores, optio. Incidunt vero tenetur earum sunt ipsa ratione
+                        aspernatur id est recusandae sequi.
+                    </p>
+                </div>
+                <img src="images/banner/facebook.gif" alt="" style="height: 30%;width: 30%;padding:1em 0 1em 0;">
+                <div style="text-align: left;font-weight: 300;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni consequuntur, ea delectus
+                        nesciunt corrupti qui velit consectetur error! Recusandae tenetur nobis laborum sit. Modi aut
+                        sit ipsum dolores at!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto est placeat impedit magni,
+                        ducimus repudiandae ipsum tenetur dicta dolor neque qui accusantium commodi aspernatur odio
+                        corrupti consequatur. Eveniet, sequi veniam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores iusto. Id
+                        tempora similique, inventore, expedita quis sunt blanditiis ipsa eius totam quasi non. Facere
+                        quae nisi iure fugiat in!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur at, illo accusamus
+                        aperiam a nemo repellat. Asperiores, optio. Incidunt vero tenetur earum sunt ipsa ratione
+                        aspernatur id est recusandae sequi.
+                    </p>
+                    <div class="codeContainer">
+                        <code>
+                            <pre>
+<span>1</span>  <span class="reservedWords">function</span> <span class="varName">add</span>(<span class="value">num1</span>,<span class="value">num2</span>){
+<span>2</span>      <span class="reservedWords">return</span> <span class="value">num1</span> + <span class="value">num2</span>;
+<span>3</span>  }
+<span>4</span>
+<span>5</span>  <span class="reservedWords">var</span> <span class="varName">result</span> = <span class="varName">add</span>(<span class="value">3</span>,<span class="value">2</span>)  <span class="comment">// Output: 5</span>
+<span>6</span></pre>
+                        </code>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni consequuntur, ea delectus
+                        nesciunt corrupti qui velit consectetur error! Recusandae tenetur nobis laborum sit. Modi aut
+                        sit ipsum dolores at!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto est placeat impedit magni,
+                        ducimus repudiandae ipsum tenetur dicta dolor neque qui accusantium commodi aspernatur odio
+                        corrupti consequatur. Eveniet, sequi veniam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores iusto. Id
+                        tempora similique, inventore, expedita quis sunt blanditiis ipsa eius totam quasi non. Facere
+                        quae nisi iure fugiat in!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur at, illo accusamus
+                        aperiam a nemo repellat. Asperiores, optio. Incidunt vero tenetur earum sunt ipsa ratione
+                        aspernatur id est recusandae sequi.
+                    </p>
+                </div>
+                <img src="images/banner/man.jpg" alt="">
+                <div style="text-align: left;font-weight: 300;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni consequuntur, ea delectus
+                        nesciunt corrupti qui velit consectetur error! Recusandae tenetur nobis laborum sit. Modi aut
+                        sit ipsum dolores at!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto est placeat impedit magni,
+                        ducimus repudiandae ipsum tenetur dicta dolor neque qui accusantium commodi aspernatur odio
+                        corrupti consequatur. Eveniet, sequi veniam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores iusto. Id
+                        tempora similique, inventore, expedita quis sunt blanditiis ipsa eius totam quasi non. Facere
+                        quae nisi iure fugiat in!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur at, illo accusamus
+                        aperiam a nemo repellat. Asperiores, optio. Incidunt vero tenetur earum sunt ipsa ratione
+                        aspernatur id est recusandae sequi.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <div style="width: 20%;">
+            <aside>
+                <img src="images/banner/dance.gif">
+            </aside>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <hr style="height: 1em; border:none; margin-top: 1em;">
+        <ul class="SocialMedias">
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/github.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/google-plus.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/instagram.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/facebook.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/tumblr.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/twitter.svg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="github.com/theogoro">
+                    <img src="images/socialmedia/pinterest.svg">
+                </a>
+            </li>
+        </ul>
+        <p style="font-size: 75%; padding-bottom: 5px;">
+            Copyright (c) 2017 - 2019 Copyright Theo Berta & Santiago Nieva All Rights Reserved.
+        </p>
+    </footer>
+    <div class="modal" id="modal">
+        <div class="modalContent">
+            <div style="text-align: right;">
+                <img src="images/close.svg" class="close" id="close">
+            </div>
+            <p style="margin-bottom: 1em;">Anuncio</p>
+            <img src="images/banner/bannerSansumg.gif" alt="">
+            <p style="margin-top: 1em;">Los anuncios nos ayudan a mantener los cursos gratis</p>
+        </div>
+    </div>
+    <script>
+
+        const modal = document.getElementById('modal');
+        const closeBtn = document.getElementById('close');
+        modal.style.display = 'block';
+
+        function hide() {
+            if (modal.classList.contains('hide')) {
+                modal.style.display = "none";
+            }
+        }
+        closeBtn.addEventListener('click', function () {
+            modal.addEventListener("animationend", hide); modal.classList.add('hide')
+        });
+        modal.addEventListener('click', function () {
+            modal.addEventListener("animationend", hide); modal.classList.add('hide')
+        });
+
+
+    </script>
+</body>
