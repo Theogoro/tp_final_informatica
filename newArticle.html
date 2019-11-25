@@ -27,31 +27,6 @@
                 </ul>
             </nav>
         </div>
-        <input placeholder="¿Que deseas buscar?" class="findBarInput" id="findBarInput">
-        <img src="images/find.svg" style="width: 30px; height: 30px; align-self: center;cursor: pointer;"
-            onclick="find(document.getElementById('findBarInput').value)">
-        <script>
-            function find(findTerm) {
-                var location = "";
-                if (findTerm != "") {
-                    var f = String(findTerm);
-                    console.log(f);
-                    switch (f.toLowerCase()) {
-                        case 'python':
-                            location = 'findPython.html';
-                            break;
-                        case 'javascript':
-                            location = 'findJavaScript.html';
-                            break;
-                    }
-                    if (location != "") {
-                        window.location = location;
-                    } else {
-                        window.location = 'notFound.html';
-                    }
-                }
-            }
-        </script>
     </header>
     <main>
         <article>
