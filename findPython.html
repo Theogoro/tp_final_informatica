@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <title>CroKode - Lenguajes</title>
+    <title>CroKode - Resultados de Python</title>
 </head>
 
 <body>
@@ -27,43 +27,70 @@
                 </ul>
             </nav>
         </div>
+        <input placeholder="¿Que deseas buscar?" class="findBarInput" id="findBarInput">
+        <img src="images/find.svg" style="width: 30px; height: 30px; align-self: center;cursor: pointer;"
+            onclick="find(document.getElementById('findBarInput').value)">
+        <script>
+            function find(findTerm) {
+                var location = "";
+                if (findTerm != "") {
+                    var f = String(findTerm);
+                    console.log(f);
+                    switch (f.toLowerCase()) {
+                        case 'python':
+                            location = 'findPython.html';
+                            break;
+                        case 'javascript':
+                            location = 'findJavaScript.html';
+                            break;
+                    }
+                    if (location != "") {
+                        window.location = location;
+                    } else {
+                        window.location = 'notFound.html';
+                    }
+                }
+            }
+        </script>
 </header>
     <main>
         <div class="titleCards">
+            <!-- <img src="images/courses.svg" alt=""> -->
             <img src="images/code.svg" alt="">
+
             <p>Lenguajes</p>
         </div>
         <div class="cardContainer">
-            <div class="card leftCard" id="clicked">
-                <img src="images/lenguajes/js.svg" alt="" id="clicked">
-                <p class="name" id="clicked">Javascript</p>
+            <div class="card leftCard">
+                <img src="images/lenguajes/js.svg" alt="">
+                <p class="name">Javascript</p>
                 <p style="padding-bottom: 1em;">3 Billion devices "Run" Java around the world</p>
                 <div class="teacher">
                     <img src="images/user.svg" alt="user">
                     <p>Flashque Doobsoleto</p>
                 </div>
             </div>
-            <div class="card leftCard" id="clicked">
-                <img src="images/lenguajes/python.svg" alt="" id="clicked">
-                <p class="name" id="clicked">Python</p>
+            <div class="card leftCard">
+                <img src="images/lenguajes/python.svg" alt="">
+                <p class="name">Python</p>
                 <p>Un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad</p>
                 <div class="teacher" style="margin-top: 2.5em;">
                     <img src="images/user.svg" alt="user">
                     <p>Nieva Santiago</p>
                 </div>
             </div>
-            <div class="card leftCard" id="clicked">
-                <img src="images/lenguajes/golang.svg" alt="" id="clicked">
-                <p class="name" id="clicked">Golang</p>
+            <div class="card leftCard">
+                <img src="images/lenguajes/golang.svg" alt="">
+                <p class="name">Golang</p>
                 <p>Es un lenguaje de programación de código abierto que facilita la creación de software simple, confiable y eficiente</p>
                 <div class="teacher" style="margin-top: 1.5em;">
                     <img src="images/user.svg" alt="user">
                     <p>Bill Gato</p>
                 </div>
             </div>
-            <div class="card" id="clicked">
-                <img src="images/lenguajes/java.svg" alt="" id="clicked">
-                <p class="name" id="clicked">Java</p>
+            <div class="card">
+                <img src="images/lenguajes/java.svg" alt="">
+                <p class="name">Java</p>
                 <p style="padding-bottom: 1em;">3 Billion devices "Run" Java around the world</p>
                 <div class="teacher">
                     <img src="images/user.svg" alt="user">
@@ -72,36 +99,36 @@
             </div>
         </div>
         <div class="cardContainer">
-            <div class="card leftCard" id="clicked">
-                <img src="images/lenguajes/flutter.svg" alt="" id="clicked">
-                <p class="name" id="clicked">Flutter</p>
+            <div class="card leftCard">
+                <img src="images/lenguajes/flutter.svg" alt="">
+                <p class="name">Flutter</p>
                 <p>Un kit de herramientas de UI de Google para realizar hermosas aplicaciones</p>
                 <div class="teacher">
-                    <img src="images/user.svg" alt="user" id="clicked">
+                    <img src="images/user.svg" alt="user">
                     <p>Cecil Padilla</p>
                 </div>
             </div>
-            <div class="card leftCard" id="clicked">
-                <img src="images/lenguajes/dart.svg" alt="" id="clicked">
-                <p class="name" id="clicked">Dartes</p>
+            <div class="card leftCard">
+                <img src="images/lenguajes/dart.svg" alt="">
+                <p class="name">Dartes</p>
                 <p>Un lenguaje optimizado por el cliente para aplicaciones rápidas</p>
                 <div class="teacher">
                     <img src="images/user.svg" alt="user">
                     <p>Ela Almond</p>
                 </div>
             </div>
-            <div class="card leftCard" id="clicked">
-                <img src="images/lenguajes/c-seeklogo.com.svg" alt="" id="clicked">
-                <p class="name" id="clicked">C++</p>
+            <div class="card leftCard">
+                <img src="images/lenguajes/c-seeklogo.com.svg" alt="">
+                <p class="name">C++</p>
                 <p>Uno de los lenguajes de programación más populares para aplicaciones gráficas</p>
                 <div class="teacher">
                     <img src="images/user.svg" alt="user">
                     <p>Jorge Juarez</p>
                 </div>
             </div>
-            <div class="card" id="clicked">
-                <img src="images/lenguajes/electron.svg" alt="" id="clicked">
-                <p class="name" id="clicked">Electron JS</p>
+            <div class="card">
+                <img src="images/lenguajes/electron.svg" alt="">
+                <p class="name">Electron JS</p>
                 <p>Cree aplicaciones de escritorio multiplataforma con JavaScript, HTML y CSS</p>
                 <div class="teacher">
                     <img src="images/user.svg" alt="user">
@@ -109,19 +136,6 @@
                 </div>
             </div>
         </div>
-    <script type="text/javascript">
-        var banners = document.querySelectorAll('#clicked');
-        for (var i = banners.length - 1; i >= 0; i--) {
-            banners[i].addEventListener('click',function(){
-                window.location = 'course.html';
-            });
-        }
-    </script>
-    <style>
-    #clicked{
-        cursor: pointer;
-    }
-    </style>
     </main>
     <footer>
         <hr style="height: 1em; border:none">
